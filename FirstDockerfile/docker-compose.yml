@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  cpp_app:
+    build:
+      context: .    # Path where Dockerfile is located
+      dockerfile: Dockerfile  # Specifies the Dockerfile
+    container_name: cont1    # Name of the running container
+    image: img1              # Name of the built image
+    command: ["./main"]       # Run the compiled C++ program
